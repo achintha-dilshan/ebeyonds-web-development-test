@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import twitterIcon from "@/assets/icons/twitter.svg";
 import youtubeIcon from "@/assets/icons/youtube.svg";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -17,14 +18,14 @@ import youtubeIcon from "@/assets/icons/youtube.svg";
           <span>Follow us on</span>
           <ul>
             <li>
-              <a href="javascript:void(0)">
+              <RouterLink to="#">
                 <img :src="twitterIcon" alt="twitter" />
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a href="javascript:void(0)">
+              <RouterLink to="#">
                 <img :src="youtubeIcon" alt="youtube" />
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>
@@ -36,8 +37,8 @@ import youtubeIcon from "@/assets/icons/youtube.svg";
         >
         <span
           >Photos by Felix Mooneeram &amp;
-          <a href="javascript:void(0)">Serge Kutuzov</a> on
-          <a href="javascript:void(0)">Unsplash</a></span
+          <RouterLink to="#">Serge Kutuzov</RouterLink> on
+          <RouterLink to="#">Unsplash</RouterLink></span
         >
       </div>
     </div>

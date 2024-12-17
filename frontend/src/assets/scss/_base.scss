@@ -59,3 +59,67 @@ $border-primary: #3c3c3c;
   margin: 0 auto;
   padding: 0 2.5rem;
 }
+
+.btn-primary {
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-primary;
+  background-color: $bg-secondary;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  padding: 0.75rem;
+  text-align: center;
+  width: 100%;
+  max-width: 240px;
+  cursor: pointer;
+}
+
+section {
+  padding: 5rem 0;
+
+  .title {
+    font-family: "DIN Alternate", serif;
+    color: $text-primary;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 700;
+  }
+
+  .caption {
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-secondary;
+  }
+}
+
+.form-field {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  color: $text-secondary;
+  line-height: 28px;
+}
+
+.form-input {
+  background-color: $bg-light;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: $text-primary;
+  width: 100%;
+
+  &:not(textarea) {
+    height: 46px;
+  }
+}
+
+.form-error {
+  font-size: 14px;
+  line-height: 28px;
+  color: #d90429;
+}
