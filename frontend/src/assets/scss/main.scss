@@ -1,1 +1,74 @@
-@use "./base";
+@use "./base" as _;
+
+body {
+    background-color: _.$black;
+}
+
+// footer
+.footer {
+  background-color: _.$bg-primary;
+
+  &-top {
+    padding: 1.8rem 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+    border-bottom: 1px solid _.$border-primary;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    address {
+      color: _.$text-primary;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: start;
+      gap: 2.5rem;
+      color: _.$text-primary;
+
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          height: 22px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    span {
+      color: _.$text-secondary;
+      font-size: 14px;
+
+      a {
+        color: _.$text-secondary;
+      }
+    }
+  }
+}
