@@ -1,5 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+import Footer from "@/layouts/Footer.vue";
+</script>
 
 <template>
-  <h1>Hello World!</h1>
+  <main>
+    <RouterView />
+  </main>
+
+  <!-- footer -->
+  <Footer />
 </template>
