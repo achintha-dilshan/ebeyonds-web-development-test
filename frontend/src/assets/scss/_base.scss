@@ -1,0 +1,52 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Open+Sans:wght@300..800&display=swap");
+
+@font-face {
+  font-family: "DIN Alternate";
+  src: url("../fonts/DINAlternate.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Alternate";
+  src: url("../fonts/DINAlternateBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+// colors
+$white: #fff;
+$black: #000;
+
+$text-primary: $white;
+$text-secondary: #b7b7b7;
+$text-light: #eaeaea;
+
+$bg-dark: #0f0f0f;
+$bg-primary: #1d1d1d;
+$bg-secondary: #CC9601;
+$bg-light: #3c3c3c;
+
+$border-primary: #3c3c3c;
