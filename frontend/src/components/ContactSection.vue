@@ -5,9 +5,9 @@ import ContacatForm from "./ContacatForm.vue";
 <template>
   <section class="contact-section">
     <div class="container">
-      <div class="header">
-        <h2 class="title" data-aos="fade-up" data-aos-duration="300">How to reach us</h2>
-        <p class="caption" data-aos="fade-up" data-aos-duration="300">Lorem ipsum dolor sit amet, consetetur.</p>
+      <div class="header" data-aos="fade-up" data-aos-duration="300">
+        <h2 class="title">How to reach us</h2>
+        <p class="caption">Lorem ipsum dolor sit amet, consetetur.</p>
       </div>
       <div class="content">
         <!-- form -->

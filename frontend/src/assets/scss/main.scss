@@ -4,6 +4,23 @@ body {
   background-color: _.$black;
 }
 
+// hero section
+.hero-section {
+  padding: 0;
+
+  @media(max-width: 1024px) {
+    .swiper {
+      height: 400px;
+    }
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 // intro section
 .intro-section {
   background-color: _.$bg-dark;
