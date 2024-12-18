@@ -58,7 +58,7 @@
       <div class="form-field checkbox-field">
         <input type="checkbox" name="terms" id="terms" required />
         <label for="terms" class="form-label"
-          >I agree to the <a href="#">Terms &amp; Conditions</a></label
+          >I agree to the <RouterLink to="#">Terms &amp; Conditions</RouterLink></label
         >
       </div>
       <div class="button-section">

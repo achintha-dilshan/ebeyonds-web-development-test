@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Batman",
+    "imageURL": "https://static.tvmaze.com/uploads/images/medium_portrait/6/16463.jpg",
+    "targetURL": "https://www.tvmaze.com/shows/975/batman",
+    "description": "<p>Wealthy entrepreneur Bruce Wayne and his ward Dick Grayson lead a double life: they are actually crime fighting duo Batman and Robin. A secret Batpole in the Wayne mansion leads to the Batcave, where Police Commissioner Gordon often calls with the latest emergency threatening Gotham City. Racing to the scene of the crime in the Batmobile, Batman and Robin must (with the help of their trusty Bat-utility-belt) thwart the efforts of a variety of master criminals, including Catwoman, Egghead, The Joker, King Tut, The Penguin, and The Riddler.</p>"
+  },
+  {
+    "id": 2,
+    "name": "The Wild Wild West",
+    "imageURL": "https://static.tvmaze.com/uploads/images/medium_portrait/18/46499.jpg",
+    "targetURL": "https://www.tvmaze.com/shows/3515/the-wild-wild-west",
+    "description": "<p>James West and Artemus Gordon are two Secret Service agents of President Grant who take their splendidly appointed private train through the west to fight evil. Half science fiction and half western, Artemus designs a series of interesting gadgets for James and is a master of disguise.</p>"
+  },
+  {
+    "id": 3,
+    "name": "Spider-Man",
+    "imageURL": "https://static.tvmaze.com/uploads/images/medium_portrait/8/21945.jpg",
+    "targetURL": "https://www.tvmaze.com/shows/1611/spider-man",
+    "description": "<p><b>Spider-Man</b> (1994) tells the story of a 19-year-old Peter Parker in his first year at Empire State University, and his alter-ego Spider-Man. The show features Spider-Man's classic villains, including the Kingpin, the Green Goblin, the Lizard, the Scorpion, Doctor Octopus, Mysterio, the Rhino, the Shocker, The Vulture and the Chameleon, as well as more recent villains such as Venom, Carnage and the Hobgoblin.</p>"
+  }
+]
