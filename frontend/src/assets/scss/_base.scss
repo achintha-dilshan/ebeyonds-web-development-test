@@ -54,31 +54,13 @@ $border-primary: #3c3c3c;
 
 // utils
 .container {
-  max-width: 1440px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2.5rem;
 }
 
-.btn-primary {
-  font-family: "Inter", serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: $text-primary;
-  background-color: $bg-secondary;
-  text-transform: uppercase;
-  border-radius: 5px;
-  border: none;
-  padding: 0.75rem;
-  text-align: center;
-  width: 100%;
-  max-width: 240px;
-  cursor: pointer;
-}
-
 section {
-  padding: 5rem 0;
-
   .title {
     font-family: "DIN Alternate", serif;
     color: $text-primary;

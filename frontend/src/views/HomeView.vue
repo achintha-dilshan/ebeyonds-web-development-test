@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import ContactSection from "../components/ContactSection.vue";
+import FavoritesSection from "@/components/FavoritesSection.vue";
+import ContactSection from "@/components/ContactSection.vue";
 </script>
 
 <template>
-  <!-- contact Section -->
+  <!-- favorites section -->
+  <FavoritesSection />
+
+  <!-- contact section -->
   <ContactSection />
 </template>
