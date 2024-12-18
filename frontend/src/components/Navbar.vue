@@ -4,17 +4,18 @@ import logo from "@/assets/img/logo.svg";
 import { onMounted, onUnmounted, ref } from "vue";
 
 const showMobileMenu = ref<boolean>(false);
-const navbarRef = ref<HTMLElement>();
+const navbarRef = ref<HTMLElement | null>(null);
 
-const toggleMobileMenu = () => {
+// Toggle the mobile menu
+const toggleMobileMenu = (): void => {
   showMobileMenu.value = !showMobileMenu.value;
 };
 
 onMounted(() => {
   if (!navbarRef.value) return;
 
-  const observer = new ResizeObserver((entries) => {
-    const navbar = entries[0]?.target;
+  const observer = new ResizeObserver((entries: ResizeObserverEntry[]) => {
+    const navbar = entries[0]?.target as HTMLElement;
     if (!navbar) return;
     showMobileMenu.value = false;
   });
