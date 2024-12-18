@@ -4,11 +4,119 @@ body {
   background-color: _.$black;
 }
 
+// navbar
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: _.$bg-dark;
+  padding: 1rem 0;
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu-close-btn {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      .nav-link {
+        a {
+          text-transform: uppercase;
+          font-family: "Inter", serif;
+          color: _.$text-primary;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+        }
+
+        &:hover,
+        &.active {
+          a {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+          }
+        }
+      }
+    }
+
+    .menu {
+      @media (max-width: 1024px) {
+        background-color: _.$bg-dark;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        max-width: 280px;
+        padding: 3rem 2rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+
+        &.show {
+          transform: translateX(0%);
+        }
+
+        .menu-close-btn {
+          display: block;
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          border: none;
+          outline: none;
+          background: transparent;
+
+          .menu-close-icon {
+            color: _.$text-secondary;
+          }
+        }
+
+        ul {
+          flex-direction: column;
+          align-items: start;
+          gap: 1rem;
+
+          .nav-link {
+            width: 100%;
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger-menu-btn {
+      display: none;
+
+      @media (max-width: 1024px) {
+        display: block;
+        border: none;
+        outline: none;
+        background: transparent;
+
+        .hamburger-menu-icon {
+          color: _.$text-primary;
+        }
+      }
+    }
+  }
+}
+
 // hero section
 .hero-section {
   padding: 0;
 
-  @media(max-width: 1024px) {
+  @media (max-width: 1024px) {
     .swiper {
       height: 400px;
     }
@@ -220,7 +328,6 @@ body {
 
 // contact section
 .contact-section {
-
   @media (max-width: 768px) {
     padding-bottom: 0;
   }
