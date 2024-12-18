@@ -1,4 +1,5 @@
 import "./assets/css/style.min.css";
+import 'aos/dist/aos.css';
 
 import { createApp } from "vue";
 import App from "./App.vue";

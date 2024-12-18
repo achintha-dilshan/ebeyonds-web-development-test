@@ -4,10 +4,38 @@ body {
   background-color: _.$black;
 }
 
+// intro section
+.intro-section {
+  background-color: _.$bg-dark;
+
+  .header {
+    max-width: 520px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 54px;
+      line-height: 82px;
+      color: _.$text-primary;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      color: _.$text-secondary;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
 // favorites section
 .favorites-section {
   background-color: _.$bg-primary;
-  padding: 2.5rem 0;
 
   .header {
     padding-bottom: 2.5rem;
@@ -62,7 +90,7 @@ body {
           color: #a3a3a3;
 
           @media (max-width: 768px) {
-           font-size: 14px;
+            font-size: 14px;
           }
         }
       }
@@ -175,7 +203,6 @@ body {
 
 // contact section
 .contact-section {
-  padding: 5rem 0;
 
   @media (max-width: 768px) {
     padding-bottom: 0;

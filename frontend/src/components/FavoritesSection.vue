@@ -6,7 +6,7 @@ import MovieCard from "./MovieCard.vue";
 <template>
   <section class="favorites-section">
     <div class="container">
-      <div class="header">
+      <div class="header" data-aos="fade-up" data-aos-duration="300">
         <h2 class="title">Collect your favourites</h2>
 
         <form action="">

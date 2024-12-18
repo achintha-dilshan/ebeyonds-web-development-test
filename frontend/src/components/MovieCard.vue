@@ -3,7 +3,7 @@ import { X } from "lucide-vue-next";
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" data-aos="fade-up" data-aos-duration="300">
     <div class="card-header">
       <button class="remove-btn">
         <X class="remove-icon" />
