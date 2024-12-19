@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { X } from "lucide-vue-next";
-import { defineProps, defineEmits } from "vue";
 import type { Movie } from "./FavoritesSection.vue";
 
 defineProps<{

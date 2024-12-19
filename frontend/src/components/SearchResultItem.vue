@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import fallbackImg from "@/assets/img/fallback.png";
-import { defineProps, defineEmits } from "vue";
 
 defineProps<{
   result: any;

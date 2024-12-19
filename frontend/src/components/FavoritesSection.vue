@@ -3,6 +3,9 @@ import MovieCard from "./MovieCard.vue";
 import SearchForm from "./SearchForm.vue";
 import moviesData from "@/data/movies.json";
 import { ref } from "vue";
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
 
 export type Movie = {
   id: number;
@@ -15,7 +18,9 @@ export type Movie = {
 const movies = ref<Movie[]>(moviesData);
 
 const removeMovie = (id: number) => {
+  const movieName = movies.value.find((movie) => movie.id == id)?.name;
   movies.value = movies.value.filter((movie) => movie.id !== id);
+  toast.info(`The movie "${movieName}" has been removed.`, { timeout: 2000 });
 };
 
 const addToFavorites = (result: any) => {
@@ -31,9 +36,13 @@ const addToFavorites = (result: any) => {
     (existingItem) => existingItem.id == newMovie.id
   );
 
-  if (exist) return;
+  if (exist) {
+    toast.info(`The movie "${newMovie.name}" already exists.`, { timeout: 2000 });
+    return
+  };
 
   movies.value.push(newMovie);
+  toast.success(`The movie "${newMovie.name}" has been successfully added to the favorites.`, { timeout: 2000 });
 };
 </script>
 

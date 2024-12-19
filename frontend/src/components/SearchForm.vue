@@ -2,7 +2,6 @@
 import { Loader, Search, X } from "lucide-vue-next";
 import SearchResultItem from "./SearchResultItem.vue";
 import { ref, watch } from "vue";
-import { defineEmits } from "vue";
 
 const searchQuery = ref<string>("");
 const isLoading = ref<boolean>(false);
